@@ -1,2 +1,56 @@
-# Data-Free_Network_Quantization_With_Adversarial_Knowledge_Distillation
+# Data-Free Network Quantization With Adversarial Knowledge Distillation
+
 Data-Free Network Quantization With Adversarial Knowledge Distillation PyTorch
+
+## Requirements
+
+- Pytorch 1.4.0 
+- Python 3.6
+- Torchvision 0.5.0
+- tensorboard
+- tensorboardX
+
+
+## Running the code
+
+### cifar10 dataset 
+
+```shell
+CUDA_VISIBLE_DEVICES=0 python main.py --dataset=cifar10 --alpha=0.01 --do_wamrup=True --do_Ttrain=True
+```
+
+
+### cifar100 dataset 
+
+if you did train the teacher network, let argument "do_Ttrain" be False like as belows:
+
+```shell
+CUDA_VISIBLE_DEVICES=0 python main.py --dataset=cifar10 --alpha=0.01 --do_wamrup=True --do_Ttrain=False
+```
+
+
+Arguments:
+
+- `dataset` - Choose a dataset name
+	- [cifar10, cifar100]
+- `data` - dataset path
+- `teacher_dir` - save path for teacher 
+- `n_epochs` - Epochs
+- `iter` - Iterations
+- `batch_size` - Size of the batches
+- `lr_G` - learning rate for generator
+- `lr_S` - learning rate for student
+- `alpha` - Alpha value
+- `latent_dim` - Dimensionality of the latent space
+- `img_size` - Size of each image dimension
+- `channels` - Number of image channels
+- `saved_img_path` - Save path for generated images
+- `saved_model_path` - Save path for trained stduent
+- `do_warmup` - Do warm-up??
+- `do_Ttrain` - Do train teacher network??
+
+
+## Result examples
+
+
+![1](./assets/fig1.PNG)
