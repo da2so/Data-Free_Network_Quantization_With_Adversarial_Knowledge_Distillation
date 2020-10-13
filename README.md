@@ -16,16 +16,17 @@ Data-Free Network Quantization With Adversarial Knowledge Distillation PyTorch
 ### cifar10 dataset 
 
 ```shell
-CUDA_VISIBLE_DEVICES=0 python main.py --dataset=cifar10 --alpha=0.01 --do_wamrup=True --do_Ttrain=True
+CUDA_VISIBLE_DEVICES=0 python main.py --dataset=cifar10 --alpha=0.01 --do_warmup=True --do_Ttrain=True
 ```
 
+The generated images and a trained student network from Knowledge distillation will be saved in `./outputs` (default) folder.
 
 ### cifar100 dataset 
 
 if you did train the teacher network, let argument "do_Ttrain" be False like as belows:
 
 ```shell
-CUDA_VISIBLE_DEVICES=0 python main.py --dataset=cifar10 --alpha=0.01 --do_wamrup=True --do_Ttrain=False
+CUDA_VISIBLE_DEVICES=0 python main.py --dataset=cifar10 --alpha=0.01 --do_warmup=True --do_Ttrain=False
 ```
 
 
