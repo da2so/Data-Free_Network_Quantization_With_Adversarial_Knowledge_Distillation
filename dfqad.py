@@ -154,6 +154,7 @@ class DFQAD():
                 self.optimizer_G.zero_grad()
                 gen_imgs = self.generator(z)
                 o_T= self.teacher(gen_imgs)
+                pred = o_T.data.max(1)[1]
                 so_T = torch.nn.functional.softmax(o_T, dim = 1)
                 so_T_mean=so_T.mean(dim = 0)
 
