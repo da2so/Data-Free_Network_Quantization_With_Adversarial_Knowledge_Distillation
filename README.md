@@ -1,7 +1,6 @@
 # Data-Free Network Quantization With Adversarial Knowledge Distillation
 
-Data-Free Network Quantization With Adversarial Knowledge Distillation PyTorch
-
+Data-Free Network Quantization With Adversarial Knowledge Distillation PyTorch (Reproduced)
 ## Requirements
 
 - Pytorch 1.4.0 
