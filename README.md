@@ -57,3 +57,7 @@ Arguments:
 ![1](./assets/fig1.PNG)
 
 ![1](./assets/fig2.png)
+
+### <span style="color:#C70039 ">Reference </span>
+Choi, Yoojin, et al. "Data-free network quantization with adversarial knowledge distillation." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops. 2020.
+
